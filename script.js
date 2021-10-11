@@ -3,13 +3,13 @@ const hoursElement =document.getElementById('hours');
 const minutesElement =document.getElementById('minutes');
 const secondsElement =document.getElementById('seconds');
 
-const newYears = "15 Oct 2021, 12:00";
+const newDate = "15 Oct 2021, 15:00";
 
 function countdown () {
     const currentDate =new Date();
-    const newYearsDate = new Date(newYears);
+    const newDate2 = new Date(newDate);
 
-    const totalSeconds =(newYearsDate - currentDate)/ 1000;
+    const totalSeconds =(newDate2 - currentDate)/ 1000;
 
     const days = Math.floor(totalSeconds / 3600 / 24); /* Math.floor sets full number */
     const hours = Math.floor(((totalSeconds/3600) % 24)); /* Module for hours here, how much is left until 24 is full */

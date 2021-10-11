@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" defer></script>
+    <script src="script.js" async></script>
     <title>Darauf trinken wir...</title>
 </head>
 <body>
-    <h1>Wine Weekend 2021</h1>
-
     <div class="countdown-container">
-        <div class="countdown-el days-c">
-            <p class="big-text" id="days"></p>
-            <span>Tage</span>
+        <div class="countdown__heading">
+            <h1 >Wine Weekend 2021</h1>
         </div>
-        <div id="countdown-el hours-c">
-            <p class="big-text" id="hours"></p>
-            <span>Stunden</span>
-        </div>
-        <div id="countdown-el minutes-c">
-            <p class="big-text" id="minutes"></p>
-            <span>Minuten</span>
-        </div>
-        <div id="countdown-el seconds-c">
-            <p class="big-text" id="seconds"></p>
-            <span>Sekunden</span>
+        <div class="countdown__timer">
+            <div class="countdown__timer-element">
+                <p class="countdown__timer-element-time" id="days"></p>
+                <span class="countdown__timer-text">Tage</span>
+            </div>
+            <div class="countdown__timer-element">
+                <p class="countdown__timer-element-time" id="hours"></p>
+                <span class="countdown__timer-text">Stunden</span>
+            </div>
+            <div class="countdown__timer-element">
+                <p class="countdown__timer-element-time" id="minutes"></p>
+                <span class="countdown__timer-text">Minuten</span>
+            </div>
+            <div class="countdown__timer-element">
+                <p class="countdown__timer-element-time" id="seconds"></p>
+                <span class="countdown__timer-text">Sekunden</span>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
