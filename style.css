@@ -23,16 +23,13 @@ body {
 .countdown-container {
     display: flex;
     position: absolute;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.05) center center no-repeat fixed;
     background-size: cover;
-    overflow: scroll;
 }
 
 .countdown__heading {
@@ -87,11 +84,7 @@ body {
     }
 
     .countdown__timer-element-time {
-        font-size: 2.3rem;
-    }
-
-    .countdown__timer-text {
-        font-size: 1.8rem;
+        font-size: 2.7rem;
     }
 }
 
@@ -116,6 +109,10 @@ body {
 
 @media (max-width: 48em) {
 
+    .countdown-container {
+        overflow: scroll;
+    }
+
     .countdown__timer-element-time {
         font-size: 3.5rem;
     }
@@ -127,8 +124,12 @@ body {
 
 @media (max-width: 36em) {
 
+    .countdown-container {
+        overflow: scroll;
+    }
+
     .countdown__heading {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .countdown__timer-element-time {
